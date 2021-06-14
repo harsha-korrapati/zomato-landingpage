@@ -87,6 +87,36 @@ body{
     margin: 18px 0;
 }
 
+.food__card__image__container{
+    width: 100%;
+
+}
+
+.food__image{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.food__card{
+    background-color: #fff;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.food__card__description{
+    padding: 17px;
+    font-size: 19px;
+}
+
+.explore__menu__text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
 @media (min-width:768px){
     .navbar{
         justify-content: space-between;
@@ -96,8 +126,45 @@ body{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        margin-bottom: 80px;
     }
+    .explore__menu__lists{
+        display: flex;
+        gap: 18px;
+        margin-top: 37px;
+        margin-left: 18px;
+        margin-right: 20px;
+    }
+    #pizza__card{
+        margin-top: -25px;
+        margin-bottom: 30px;
+    }
+    .explore__menu__view__more{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index: -3;
+        transform: skewY(-6.5deg);
+    }
+    .explore__menu__container{
+        position: relative;
+    }
+
 }
+
 
 @media(min-width:1024px){
     .navbar{
@@ -114,13 +181,26 @@ body{
         max-width: 900px;
     }
     .hero__text{
-        font-size: 50px;
+        font-size: 45px;
     }
+    .explore__menu__lists{
+        gap: 28px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .explore__menu__text{
+        font-size: 50px;
+        margin-bottom: 70px;
+    }
+    .hero__container{
+        margin-bottom: 120px;
+    }
+    
 }
 
 @media(min-width:1400px){
     .container{
-        max-width: 1250px;
+        max-width: 1150px;
     }
 }
 
